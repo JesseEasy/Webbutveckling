@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@media(min-width: 1100px){
+    body{
+    margin: 0;
+    padding: 0;
+    background: rgb(252, 173, 28);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+@media(min-width: 700px){
+    body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    background: rgb(252, 173, 28);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    section{
+    margin: 0px 20px 0px 20px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "desc"
+        "ing"
+        "tut"
+        "pann";
+    }
+}
+
+@media(min-width: 400px){
+    body{
+    margin: 0;
+    padding: 0;
+    background: rgb(252, 173, 28);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    section{
+    margin: 0px 20px 0px 20px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "desc"
+        "ing"
+        "tut"
+        "pann";
+    }
+}
+
+header{
+    background: rgba(255, 0, 0, 0.767);
+    color: white;
+    padding: 10px 20px 2px 20px;
+}
+
+h1{
+    margin: 0;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    margin: 0px;
+    /* padding: 40px 10px 20px 10px; */
+    font-weight: bold;
+}
+
+section{
+    margin: 0px 20px 0px 20px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "desc  desc"
+        "pann  pann"
+        "ing  tut";
+}
+
+
+#desc{
+  grid-area: desc;  
+}
+
+#pann{
+    grid-area: pann;
+}
+
+#ing{
+    grid-area: ing;
+}
+
+#tut{
+    grid-area: tut;
+}
+
+/* img{
+    display: block;
+    margin: auto;
+    width: 30%;
+} */
+
+/* @media(min-width: 700px){
+    body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-area: 
+        "ing tut";
+    background: rgb(252, 173, 28);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #ing{
+        grid-area: ing;
+    }
+
+    #tut{
+        grid-area: tut;
+    }
+} */

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "A A B B"
+        "C D D E";
+    height: 100vh;
+    margin: 0;
+}
+div{
+    font-size: 50px;
+    color: red;
+    margin: 2px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    /* padding: 2px; */
+}
+#heat {
+    grid-area: A;
+    background-image: url(images/heat.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#tus {
+    grid-area: B;
+    background-image: url(images/usualsuspects.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#im {
+    grid-area: C;
+    background-image: url(images/insideman.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+#rif {
+    grid-area: D;
+    background-image: url(images/rififi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#bj {
+    grid-area: E;
+    background-image: url(images/bankjob.jpg);
+    background-size: cover;
+    background-position: center;
+}
