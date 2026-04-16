@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+body { 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bleach/bleachbg.jpeg);
+    background-size: cover;
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Make the hitbox of the button only apply to image */
+#goback {
+    display: inline-block;
+    width: fit-content;
+}
+
+/* Arrow size */
+#goback img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    width: 100px;
+}
+
+/* Displays the character sections next to each other */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+h2.name {
+    text-align: center;
+}
+
+div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+/* Ichigo's section */
+.icsection {
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0px 0 50px 290px;
+    border-radius: 10px;
+    border: 5px solid black;
+    width: 27%;
+    background: linear-gradient(90deg, #ffdf78, #ad8913);
+}
+
+/* Yhwach's section */
+.ysection {
+    color: white;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0px 0 50px 250px;
+    border-radius: 10px;
+    border: 5px solid black;
+    width: 27%;
+    background: linear-gradient(90deg, #43a4ff, #000000);
+}
+
+.yname{
+    text-align: center;
+}
+
+/* Media queries for smaller window sizes */
+@media  screen and (max-width: 1500px) { 
+    .icsection, .ysection{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icsection, .ysection {
+    width: 60%;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #goback img{
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+        width: 100px;
+    }
+
+    .icsection {
+        width: 85%;
+        margin: 40px auto auto 40px;
+    }
+
+    .ysection {
+        width: 85%;
+        margin: 40px auto 40px 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #goback img{
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+        width: 100px;
+    }
+
+    .icsection {
+        width: 85%;
+        margin: 20px 40px 40px 40px;
+    }
+
+    .ysection {
+        width: 85%;
+        margin: 40px 40px 40px 40px;
+    }
+}
