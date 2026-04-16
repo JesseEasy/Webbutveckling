@@ -14,13 +14,13 @@ body {
 }
 
 /* Make the hitbox of the button only apply to image */
-#goback {
+#go-back {
     display: inline-block;
     width: fit-content;
 }
 
 /* Arrow size */
-#goback img {
+#go-back img {
     max-width: 100%;
     height: auto;
     display: inline-block;
@@ -100,7 +100,7 @@ div img {
         align-items: center;
     }
 
-    #goback img{
+    #go-back img{
         max-width: 100%;
         height: auto;
         display: inline-block;
@@ -124,7 +124,7 @@ div img {
         align-items: center;
     }
 
-    #goback img{
+    #go-back img{
         max-width: 100%;
         height: auto;
         display: inline-block;
