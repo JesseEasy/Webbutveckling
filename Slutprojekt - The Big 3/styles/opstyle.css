@@ -27,6 +27,20 @@ body {
     width: 100px;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    width: fit-content;
+}
+
+#nnav img, #bnav img {
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+}
+
 /* Displays the character sections next to each other */
 main {
     display: flex;
@@ -50,7 +64,7 @@ div img {
     padding: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 0px 0 50px 290px;
+    margin: 0px 0 20px 290px;
     border-radius: 10px;
     border: 5px solid black;
     width: 27%;
@@ -63,7 +77,7 @@ div img {
     padding: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 0px 0 50px 250px;
+    margin: 0px 0 20px 250px;
     border-radius: 10px;
     border: 5px solid black;
     width: 27%;
@@ -72,6 +86,22 @@ div img {
 
 .iname{
     text-align: center;
+}
+
+h2.intitle {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 20px 0;
+    font-size: 30px;
+}
+
+/* Centers the intro */
+section.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 30px 0;
 }
 
 /* Media queries for smaller window sizes */
